@@ -12,7 +12,7 @@ function DarkVariantExample() {
           alt="Hawaii Beach"
         />
         <Carousel.Caption>
-          <h5>Hawaii</h5>
+          <h5 style={{color: "white"}}>Hawaii</h5>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
