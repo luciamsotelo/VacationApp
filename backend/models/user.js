@@ -1,10 +1,16 @@
 'use strict';
 const { Model } = require('sequelize');
+const bcrypt = require('bcrypt');
 
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
     static associate(models) {
       // Define associations if any
+    }
+
+    // Method to hash the password before saving
+    async hashPassword() {
+      this.password = await bcrypt.hash(this.password, 10);
     }
   }
 
@@ -23,6 +29,14 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'User',
+    hooks: {
+      // Before saving the user, hash the password if it has been modified
+      beforeSave: async (user) => {
+        if (user.changed('password')) {
+          await user.hashPassword();
+        }
+      }
+    }
   });
 
   return User;

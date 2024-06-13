@@ -1,7 +1,5 @@
 const express = require('express');
 const { sequelize } = require('./models'); // Import Sequelize instance from models
-require('dotenv').config();
-
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -10,14 +8,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Routes
-// const exampleRoutes = require('./routes/exampleRoutes');
-// app.use('/example', exampleRoutes);
+const userRoutes = require('./routes/userRoutes');
+app.use('/api/users', userRoutes);
 
 // Error handling middleware
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send('Something broke!');
-});
+const errorHandler = require('./middleware/errorHandler');
+app.use(errorHandler);
 
 // Test the database connection function
 async function testDatabaseConnection() {
