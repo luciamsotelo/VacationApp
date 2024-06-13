@@ -39,7 +39,7 @@ const AddFamilyTrip = () => {
           <h1>Add Family Trip</h1>
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="formTripTitle">
-              <Form.Label>Title of Trip</Form.Label>
+              <Form.Label>Where did you go code?</Form.Label>
               <Form.Control
                 type="text"
                 name="title"
@@ -71,7 +71,7 @@ const AddFamilyTrip = () => {
             </Form.Group>
 
             <Form.Group controlId="formTripParticipants">
-              <Form.Label>Participants</Form.Label>
+              <Form.Label>Family Name</Form.Label>
               <Form.Control
                 type="text"
                 name="participants"

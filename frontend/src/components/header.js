@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, Button, Container, Row, Col } from 'react-bootstrap';
+import { Navbar, Button, Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Header = ({ showAuthButtons }) => {
