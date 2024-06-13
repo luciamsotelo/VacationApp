@@ -49,7 +49,7 @@ const SignInForm = () => {
               />
             </Form.Group>
 
-            <Button variant="primary" type="submit">
+            <Button variant="primary" type="submit" href="/search">
               Sign In
             </Button>
           </Form>

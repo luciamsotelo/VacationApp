@@ -22,7 +22,7 @@ const AddFamilyTrip = () => {
   const handleImageChange = (e) => {
     setFormData({
       ...formData,
-      images: [...formData.images, ...e.target.files]
+      images: [...formData.images, ...Array.from(e.target.files)]
     });
   };
 

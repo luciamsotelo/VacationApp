@@ -85,7 +85,7 @@ const UserForm = () => {
               />
             </Form.Group>
 
-            <Button variant="primary" type="submit">
+            <Button variant="primary" type="submit" href='/signIn'>
               Submit
             </Button>
           </Form>

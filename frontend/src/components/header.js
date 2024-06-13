@@ -8,15 +8,15 @@ const Header = ({ showAuthButtons }) => {
       <Container>
         <Row className="w-100">
           <Col className="d-flex align-items-center">
-            <Button variant="outline-info" href="#" className="me-3">Home</Button>
+            <Button variant="outline-info" href="/" className="me-3">Home</Button>
           </Col>
           <Col className="d-flex justify-content-center">
             <Navbar.Brand>Bonded by Adventure</Navbar.Brand>
           </Col>
           <Col className="d-flex justify-content-end">
               <div>
-                <Button variant="outline-warning" className="me-2">Sign Up</Button>
-                <Button variant="warning">Sign In</Button>
+                <Button variant="outline-warning" href="/signUp" className="me-2">Sign Up</Button>
+                <Button variant="warning" href="/signIn">Sign In</Button>
               </div>
             
           </Col>
