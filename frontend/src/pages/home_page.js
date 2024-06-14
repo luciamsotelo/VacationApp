@@ -4,7 +4,7 @@ import Footer from '../components/footer'
 import Images from '../components/carousel_images'
 const home_page = () => {
   return (
-    <div>
+    <div className='home'>
       < Header />
       < Footer />
       < Images />

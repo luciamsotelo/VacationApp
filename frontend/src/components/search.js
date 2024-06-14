@@ -27,7 +27,7 @@ const FamilyTripComponent = () => {
   };
 
   return (
-    <Container>
+    <Container className="mt-5" style={{color: "white", borderRadius: "10px", padding: "50px 1px 50px 1px", marginBottom: "75px", border: "2px solid palegoldenrod"}}>
       <Row className="justify-content-md-center">
         <Col md="8">
           {showSearch ? (
@@ -35,24 +35,24 @@ const FamilyTripComponent = () => {
               <h1>Search Family Trip</h1>
               <Form>
                 <Form.Group controlId="formTripSearch">
-                  <Form.Label>Search for Family Trip</Form.Label>
+                  <Form.Label>Enter your Family's Trip Code here</Form.Label>
                   <Form.Control type="text" placeholder="Enter trip code..." />
                 </Form.Group>
-                <Button variant="primary" onClick={handleSearch}>
+                <Button variant="outline-light" style= {{borderColor: "#ffd700", fontWeight: "bold", color: "goldenrod", marginTop: "20px"}} onClick={handleSearch}>
                   Search
                 </Button>
-                <Button variant="secondary" onClick={handleAddClick} href="/add">
+                <Button variant="outline-light" style= {{borderColor: "#ffd700", fontWeight: "bold", color: "goldenrod", marginTop: "20px", marginLeft: "20px"}} onClick={handleAddClick} href="/add">
                   Add Family Trip
                 </Button>
               </Form>
             </div>
           ) : (
             <div>
-              <Button variant="link" onClick={handleNewSearch}>
+              <Button variant="link" style={{color: "goldenrod", fontSize: "25px"}} onClick={handleNewSearch}>
                 New Search
               </Button>
               <hr />
-              <h2>Search Results</h2>
+              <h2>Family Adventures</h2>
               <Row>
                 {searchResults.map((imageUrl, index) => (
                   <Col key={index} xs={6} md={4} className="mb-4">

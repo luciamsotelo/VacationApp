@@ -25,10 +25,11 @@ const UserForm = () => {
   };
 
   return (
-    <Container>
+    <div className="d-flex justify-content-center" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1564613469739-c78f970f9c17?q=80&w=1447&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)'}}>
+    <Container className="mt-5" style={{color: "white", borderRadius: "10px", padding: "50px 1px 50px 1px", marginBottom: "75px", border: "2px solid palegoldenrod"}}>
       <Row className="justify-content-md-center">
         <Col md="6">
-          <h1>User Registration Form</h1>
+          <h1>Family Registration</h1>
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="formFirstName">
               <Form.Label>First Name</Form.Label>
@@ -85,13 +86,14 @@ const UserForm = () => {
               />
             </Form.Group>
 
-            <Button variant="primary" type="submit" href='/signIn'>
+            <Button variant="secondary" style= {{marginTop : "20px"}} type="submit" href='/signIn'>
               Submit
             </Button>
           </Form>
         </Col>
       </Row>
     </Container>
+    </div>
   );
 };
 

@@ -4,7 +4,8 @@ import '../App.css';
 
 function DarkVariantExample() {
   return (
-    <Carousel data-bs-theme="dark">
+    <div>
+    <Carousel data-bs-theme="dark" style={{marginTop: ".25px", marginBottom: ".99px", borderTop: "50px solid black", borderBottom: "50px solid black" }}>
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -12,8 +13,7 @@ function DarkVariantExample() {
           alt="Hawaii Beach"
         />
         <Carousel.Caption>
-          <h5 style={{color: "white"}}>Hawaii</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h5 style={{color: "white", fontWeight: "bold", fontSize: "50px"}}>Hawaii</h5>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -23,8 +23,7 @@ function DarkVariantExample() {
           alt="Tucson Arizona"
         />
         <Carousel.Caption>
-          <h5>Arizona</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h5 style={{color: "white", fontWeight: "bold", fontSize: "50px"}}>Arizona</h5>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -34,13 +33,11 @@ function DarkVariantExample() {
           alt="Italy"
         />
         <Carousel.Caption>
-          <h5>Italy</h5>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h5 style={{color: "white", fontWeight: "bold", fontSize: "50px"}}>Italy</h5>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </div>
   );
 }
 

@@ -4,15 +4,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Header = ({ showAuthButtons }) => {
   return (
-    <div>
-    <Navbar className="w-100" style={{backgroundColor: "goldenrod"}}>
+    
+    <Navbar className="w-100" style={{backgroundColor: "palegoldenrod"}}>
       <Container>
         <Row className="w-100">
           <Col className="d-flex align-items-center">
             <Button variant= "outline-light" href="/" className="me-3" style ={{borderColor: "black", color: "#4169e1", fontWeight: "bold", color: "black"}}>Home</Button>
           </Col>
           <Col className="d-flex justify-content-center">
-            <Navbar.Brand style={{fontSize: "45px", fontWeight: "bold", fontFamily: "calibri", color: "black", textShadow: "2px 2px 10px yellow"}}>Bonded by Adventure</Navbar.Brand>
+            <Navbar.Brand style={{fontSize: "45px", fontWeight: "bold", fontFamily: "calibri", color: "black", textShadow: "2px 2px 10px babyblue"}}>Bonded by Adventure</Navbar.Brand>
           </Col>
           <Col className="d-flex justify-content-end">
               <div className="d-flex align-items-center">
@@ -24,7 +24,7 @@ const Header = ({ showAuthButtons }) => {
         </Row>
       </Container>
     </Navbar>
-    </div>
+    
   );
 };
 

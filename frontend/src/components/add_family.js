@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 
+
 const AddFamilyTrip = () => {
   const [formData, setFormData] = useState({
     title: '',
@@ -33,7 +34,8 @@ const AddFamilyTrip = () => {
   };
 
   return (
-    <Container>
+    <div>
+    <Container className="mt-5" style={{color: "white", borderRadius: "10px", paddingTop: "50px", marginBottom: "100px", border: "2px solid palegoldenrod", backgroundImage:'url(./images/beach_sunset.jpg)', backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', height: '100vh'  }}>
       <Row className="justify-content-md-center">
         <Col md="6">
           <h1>Add Family Trip</h1>
@@ -45,7 +47,7 @@ const AddFamilyTrip = () => {
                 name="title"
                 value={formData.title}
                 onChange={handleChange}
-                placeholder="Enter trip title"
+                placeholder="Create trip code here"
               />
             </Form.Group>
 
@@ -104,13 +106,14 @@ const AddFamilyTrip = () => {
               />
             </Form.Group>
 
-            <Button variant="primary" type="submit">
+            <Button variant="outline-light" style={{color: "goldenrod", fontWeight: "bold", marginTop: "20px", marginBottom: "20px"}} type="submit">
               Add Trip
             </Button>
           </Form>
         </Col>
       </Row>
     </Container>
+    </div>
   );
 };
 
