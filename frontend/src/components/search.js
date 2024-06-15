@@ -28,7 +28,7 @@ const FamilyTripComponent = () => {
 
   return (
     <div className="d-flex justify-content-center" style={{backgroundImage: 'url(../images/beach_night_moon.jpg)', backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', height: '75vh'}}>
-    <Container className="mt-5" style={{color: "white", borderRadius: "10px", padding: "50px 1px 50px 1px", marginBottom: "75px", border: "2px solid palegoldenrod", }}>
+    <Container className="mt-5" style={{color: "white", borderRadius: "10px", padding: "50px 10px 500px 10px", marginBottom: "75px", border: "2px solid palegoldenrod", }}>
       <Row className="justify-content-md-center">
         <Col md="8">
           {showSearch ? (

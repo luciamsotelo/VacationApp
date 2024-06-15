@@ -20,8 +20,8 @@ const Header = ({ showAuthButtons }) => {
           </Col>
           <Col className="d-flex justify-content-end">
               <div className="d-flex align-items-center">
-                <Button variant = "outline-light" href="/signUp" className="me-2" style={{borderColor: "#ffd700", color: "#4169e1", fontWeight: "bold", color: "black"}}>Sign Up</Button>
-                <Button variant = "outline-light" href="/signIn" className="me-2" style={{borderColor: "#ffd700", color: "#4169e1", fontWeight: "bold", color: "black"}}>Sign In</Button>
+                <Button variant = "outline-light" href="/signUp" className="me-2" style={{borderColor: "#ffd700", color: "black", fontWeight: "bold"}}>Sign Up</Button>
+                <Button variant = "outline-light" href="/signIn" className="me-2" style={{borderColor: "#ffd700", color: "black", fontWeight: "bold"}}>Sign In</Button>
               </div>
           </Col>
         </Row>

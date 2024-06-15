@@ -2,7 +2,7 @@ import './App.css';
 import React, { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Home from './pages/home_page';
 import SignupForm from './pages/signup_page';
-import SigninForm from './pages/singin_page';
+import SigninForm from './pages/signin_page';
 import Add from './pages/add_page';
 import Search from './pages/search_page';
 
