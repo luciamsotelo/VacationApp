@@ -1,5 +1,6 @@
 import './App.css';
-import React, { Route, Routes, BrowserRouter } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/home_page';
 import SignupForm from './pages/signup_page';
 import SigninForm from './pages/signin_page';
@@ -8,7 +9,7 @@ import Search from './pages/search_page';
 
 function App() {
   return (
-    <BrowserRouter> 
+    <Router> 
       <Routes> 
         <Route index element={<Home />} />
         <Route path="/signup" element={<SignupForm />} />
@@ -16,8 +17,9 @@ function App() {
         <Route path="/add" element={<Add />} />
         <Route path="/search" element={<Search />} />
       </Routes> 
-    </BrowserRouter>
+    </Router>
   );
 }
 
 export default App;
+

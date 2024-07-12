@@ -22,9 +22,10 @@ const SignInForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log('Form submitted with data:', formData); // Log form data
     try {
-      const response = await axios.post('http://localhost:3001/api/users/signin', formData);
-      console.log(response.data); // Ensure the response includes the token and user data
+      const response = await axios.post('/api/users/signin', formData);
+      console.log('Response from server:', response.data); // Ensure the response includes the token and user data
       localStorage.setItem('token', response.data.token);
       setSignedInUser({ email: formData.email, firstName: response.data.firstName });
       setShowModal(true);
