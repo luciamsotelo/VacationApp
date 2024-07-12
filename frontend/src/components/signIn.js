@@ -27,6 +27,7 @@ const SignInForm = () => {
       const response = await axios.post('/api/users/signin', formData);
       console.log('Response from server:', response.data); // Ensure the response includes the token and user data
       localStorage.setItem('token', response.data.token);
+      localStorage.setItem('firstName', response.data.firstName);
       setSignedInUser({ email: formData.email, firstName: response.data.firstName });
       setShowModal(true);
     } catch (error) {
@@ -39,6 +40,7 @@ const SignInForm = () => {
       const timer = setTimeout(() => {
         setShowModal(false);
         navigate('/search');
+        window.location.reload(); // Refresh the browser after navigating
       }, 2000);
       return () => clearTimeout(timer);
     }
