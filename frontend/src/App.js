@@ -1,7 +1,5 @@
 import './App.css';
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/header'; // Add this line to import Header
+import React, { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Home from './pages/home_page';
 import SignupForm from './pages/signup_page';
 import SigninForm from './pages/signin_page';
@@ -39,3 +37,4 @@ function App() {
 }
 
 export default App;
+

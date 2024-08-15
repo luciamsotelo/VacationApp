@@ -36,6 +36,16 @@ function DarkVariantExample() {
           <h5 style={{color: "white", fontWeight: "bold", fontSize: "50px"}}>Italy</h5>
         </Carousel.Caption>
       </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="../images/coronadobeach.jpeg"
+          alt="Italy"
+        />
+        <Carousel.Caption>
+          <h5 style={{color: "white", fontWeight: "bold", fontSize: "50px"}}>California</h5>
+        </Carousel.Caption>
+      </Carousel.Item>
     </Carousel>
     </div>
   );
