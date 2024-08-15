@@ -5,7 +5,8 @@ const bcrypt = require('bcrypt');
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
     static associate(models) {
-      // Define associations if any
+      // Define association here
+      User.hasMany(models.Trip, { foreignKey: 'userId', as: 'trips' });
     }
 
     // Method to hash the password before saving

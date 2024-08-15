@@ -1,9 +1,11 @@
+// server.js
 require('dotenv').config();
 const express = require('express');
 const { sequelize } = require('./models'); // Import Sequelize instance from models
 const cors = require('cors');
 const errorHandler = require('./middleware/errorHandler');
 const userRoutes = require('./routes/userRoutes');
+const tripRoutes = require('./routes/tripRoutes'); // Import trip routes
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -15,6 +17,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // Routes
 app.use('/api/users', userRoutes);
+app.use('/api/trips', tripRoutes); // Add trip routes
 
 // Error handling middleware
 app.use(errorHandler);

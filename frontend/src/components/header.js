@@ -27,7 +27,7 @@ const Header = ({ user, onLogout }) => {
             <div className="d-flex align-items-center">
               {user ? (
                 <>
-                  <span className="me-2" style={{color: "black", fontWeight: "bold"}}>Welcome, {user.firstName}</span>
+                  <span className="me-2" style={{color: "black", fontWeight: "bold"}}>Welcome {user.firstName}</span>
                   <Button variant="outline-light" onClick={handleLogout} className="me-2" style={{borderColor: "#ffd700", color: "black", fontWeight: "bold"}}>Logout</Button>
                 </>
               ) : (

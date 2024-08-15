@@ -55,7 +55,7 @@ const UserForm = () => {
             <h1 className="text-center mb-4">Family Registration</h1>
             {showWelcomeMessage && (
               <div className="alert alert-success text-center" role="alert">
-                Welcome, {formData.firstName}!
+                Welcome {formData.firstName}!
               </div>
             )}
             <Form onSubmit={handleSubmit}>
